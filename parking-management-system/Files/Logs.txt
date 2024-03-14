@@ -1,0 +1,14 @@
+1 1 Has_been_registred
+2 2 Has_been_registred
+3 3 Has_been_registred
+4 4 Has_been_registred
+5 4 Has_been_added_transport
+6 4 Has_been_occupated
+7 1 Has_been_added_transport
+8 1 Has_been_added_transport
+9 5 Has_been_registred
+10 5 Has_been_added_transport
+11 5 Has_been_occupated
+12 5 Has_been_payed
+13 5 Has_been_left
+14 1 Has_been_added_transport

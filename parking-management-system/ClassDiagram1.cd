@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Database">
+    <Position X="15.75" Y="4" Width="1.5" />
+    <AssociationLine Name="Admins" Type="std::vector&lt;_Ty, _Alloc&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.875" Y="5.296" />
+        <Point X="16.875" Y="5.903" />
+        <Point X="13.414" Y="5.903" />
+        <Point X="13.414" Y="4.562" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.79" Y="1.131" Height="0.182" Width="0.735" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Clients" Type="std::vector&lt;_Ty, _Alloc&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.562" Y="5.296" />
+        <Point X="16.562" Y="5.689" />
+        <Point X="13.633" Y="5.689" />
+        <Point X="13.633" Y="4.562" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.827" Y="0.919" Height="0.182" Width="0.773" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Vehicles" Type="std::vector&lt;_Ty, _Alloc&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.25" Y="5.296" />
+        <Point X="16.25" Y="5.448" />
+        <Point X="13.852" Y="5.448" />
+        <Point X="13.852" Y="4.562" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.792" Y="0.67" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Electrics" Type="std::vector&lt;_Ty, _Alloc&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.75" Y="5.188" />
+        <Point X="14.07" Y="5.188" />
+        <Point X="14.07" Y="4.562" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.801" Y="0.403" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="ParkingSlots" Type="std::vector&lt;_Ty, _Alloc&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.75" Y="4.938" />
+        <Point X="14.289" Y="4.938" />
+        <Point X="14.289" Y="4.562" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-1.098" Y="0.183" Height="0.182" Width="1.012" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Logs" Type="std::vector&lt;_Ty, _Alloc&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.75" Y="4.75" />
+        <Point X="14.508" Y="4.75" />
+        <Point X="14.508" Y="4.562" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-1.241" Y="-0.257" Height="0.182" Width="0.616" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Tickets" Type="std::vector&lt;_Ty, _Alloc&gt;" FixedFromPoint="true">
+      <Path>
+        <Point X="15.75" Y="4.5" />
+        <Point X="15" Y="4.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.03" Y="-0.229" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>gAQAAAAQAIAAgAAAASAAAQAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Data\Database.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Admins" />
+      <Field Name="Clients" />
+      <Field Name="Vehicles" />
+      <Field Name="Electrics" />
+      <Field Name="ParkingSlots" />
+      <Field Name="Logs" />
+      <Field Name="Tickets" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FileManager">
+    <Position X="13.25" Y="0.75" Width="2" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EoAAAhAEAQAAAAAAAAAwAgkBCAAQAEAEAAAIAAAAEaA=</HashCode>
+      <FileName>Data\FileManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Admin">
+    <Position X="0.5" Y="3" Width="1.75" />
+    <Members>
+      <Method Name="Admin" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="User" FixedToPoint="true">
+      <Path>
+        <Point X="2.5" Y="2.238" />
+        <Point X="2.5" Y="2.625" />
+        <Point X="1.375" Y="2.625" />
+        <Point X="1.375" Y="3" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQEAAAAAEAAEAAQABAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Entities\Admin.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Client">
+    <Position X="2.75" Y="3" Width="1.5" />
+    <Members>
+      <Method Name="Client" Hidden="true" />
+      <Method Name="getFirstname" Hidden="true" />
+      <Method Name="getId" Hidden="true" />
+      <Method Name="getLastname" Hidden="true" />
+      <Method Name="getName" Hidden="true" />
+      <Method Name="getPhoneNumber" Hidden="true" />
+      <Method Name="isBanned" Hidden="true" />
+      <Method Name="isValidPhoneNumber" Hidden="true" />
+      <Method Name="setFirstname" Hidden="true" />
+      <Method Name="setId" Hidden="true" />
+      <Method Name="setLastname" Hidden="true" />
+      <Method Name="setPhoneNumber" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAAAkACFABAAgQIACAAQAAAIAAAAAAAAAgEAEAAAAQ=</HashCode>
+      <FileName>Entities\Client.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Electric">
+    <Position X="6.75" Y="4.25" Width="1.25" />
+    <Members>
+      <Method Name="Electric" Hidden="true" />
+      <Method Name="getBattery" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAgAAAAgAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Entities\Electric.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Log">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkACAAAAAAAAAAAAQAAgBAAAAAgAAAAAAAAABAAAAAQ=</HashCode>
+      <FileName>Entities\Log.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParkingSlot">
+    <Position X="8.5" Y="0.75" Width="1.5" />
+    <Members>
+      <Method Name="getId" Hidden="true" />
+      <Method Name="ParkingSlot" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AkACAAAAAAAAAEACAAAAAAAAAAAEAAEAAAAAAQAAACA=</HashCode>
+      <FileName>Entities\ParkingSlot.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="transport" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Ticket">
+    <Position X="8.5" Y="3.75" Width="1.5" />
+    <Members>
+      <Method Name="isValidStartTime" Hidden="true" />
+      <Method Name="Ticket" Hidden="true" />
+      <Method Name="timeToNumber" Hidden="true" />
+    </Members>
+    <AssociationLine Name="transport" Type="Transport" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.5" Y="4.574" />
+        <Point X="8.26" Y="4.574" />
+        <Point X="8.26" Y="2.734" />
+        <Point X="7" Y="2.734" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AwACAAABIAAAAAACAAAgAAAAIQAEAAAAAAAIAAAAEBA=</HashCode>
+      <FileName>Entities\Ticket.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="transport" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Transport">
+    <Position X="5.5" Y="0.75" Width="1.5" />
+    <Members>
+      <Method Name="getId" Hidden="true" />
+      <Method Name="getPlateNumber" Hidden="true" />
+      <Method Name="isValidPlateNumber" Hidden="true" />
+      <Method Name="setId" Hidden="true" />
+      <Method Name="setTransportId" Hidden="true" />
+      <Method Name="Transport" Hidden="true" />
+    </Members>
+    <AssociationLine Name="client" Type="Client" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="1.742" />
+        <Point X="5.125" Y="1.742" />
+        <Point X="5.125" Y="3.524" />
+        <Point X="4.25" Y="3.524" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ggACIAAAAAAAAAAAACAgABQAARAAAAAgAAAABAAGACA=</HashCode>
+      <FileName>Entities\Transport.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="client" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="User">
+    <Position X="1.75" Y="0.75" Width="1.5" />
+    <Members>
+      <Method Name="getId" Hidden="true" />
+      <Method Name="getPassword" Hidden="true" />
+      <Method Name="getUsername" Hidden="true" />
+      <Method Name="setPassword" Hidden="true" />
+      <Method Name="setUsername" Hidden="true" />
+      <Method Name="User" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgADAAEAAAAAAAAAAQAIAAAQAAAAAAACAAAAAAAAAIA=</HashCode>
+      <FileName>Entities\User.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vehicle">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <Members>
+      <Method Name="getType" Hidden="true" />
+      <Method Name="stringToType" Hidden="true" />
+      <Method Name="Vehicle" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Vehicle::Type">
+        <TypeIdentifier>
+          <NewMemberFileName>Entities\Vehicle.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <InheritanceLine Type="Transport" FixedToPoint="true">
+      <Path>
+        <Point X="6.25" Y="3.459" />
+        <Point X="6.25" Y="3.95" />
+        <Point X="5.5" Y="3.95" />
+        <Point X="5.5" Y="4.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAABRABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Vehicle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParkingProperties">
+    <Position X="10.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\ParkingProperties.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParkingService">
+    <Position X="10.5" Y="2.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EEAAAAAAEEAAAkAAAAAAABBFAAACAAAEAAAICEAABoA=</HashCode>
+      <FileName>Services\ParkingService.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terminal">
+    <Position X="2.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAYCAAIAAA=</HashCode>
+      <FileName>Services\Terminal.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="std::vector&lt;_Ty, _Alloc&gt;" Collapsed="true">
+    <Position X="13.25" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>A2AEk4EqCrBsCEBAAOMIIAAyEEUEQBIghQkwgkAFUko=</HashCode>
+      <FileName>D:\Programs\VS 2019\VC\Tools\MSVC\14.29.30133\include\vector</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

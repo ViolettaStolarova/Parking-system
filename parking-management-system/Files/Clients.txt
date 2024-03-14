@@ -1,0 +1,5 @@
+1 v_st violetta Violetta Stolarova +375291710752 0
+2 l_ch lolita Lolita Chernikova +375442547689 0
+3 a_dz artem Artem Dzyuba +375251238976 0
+4 v_mh vladimir Vladimir Muha +375447856439 1
+5 v_pt vlad Vlad Petrov +375443756623 0
